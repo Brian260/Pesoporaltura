@@ -1,0 +1,28 @@
+package pesoporaltura;
+
+import java.util.Scanner;
+
+public class Pesoporaltura {
+    
+    public static void main (String[] args) {
+       Scanner entrada = new Scanner (System.in);
+       System.out.println ("Insertar Peso en Kilogramos:");
+       double p = entrada.nextDouble();
+       System.out.println ("Insertar Altura en Metros:");
+       double a = entrada.nextDouble();
+       double imc = p/(a*a);
+        if (imc <= 15){
+            System.out.println("Estas muy delgado(Tienes que alimentarte más)");
+        }
+        else if (15<imc && imc<=19){
+            System.out.println("Estas delgado(Engorda un poquito más)");
+        }
+        else if (19<imc && imc<=28){
+            System.out.println("Estas en tu peso(Bien mantente así)");
+        }
+        else{
+            System.out.println("Estas Gordo(Si quieres estar en tu peso te sugiero correr)");
+        }
+    }
+}
+//Para poner tu altura debes hacerlo con el punto Ej: 1.80.Espero que le sirva esta apk:)
